@@ -1,0 +1,4 @@
+0,BUEN DÍA,*,*,Hola ¿Qué tal?#Comma Deja un mensaje y tu información de contacto#Newline    		y nos comunicaremos contigo lo más pronto posible.,custom.aiml
+0,MI NOMBRE ES *,*,*,Mucho gusto#Comma <set name="nombre"> <star/></set>;#Newline          ahora proporciona tu número telefónico.,custom.aiml
+0,MI NÚMERO DE TELEFÓNO ES *,*,*,Número telefónico: "<set name="telefono"> <star/>" guardado.</set>#Newline            ahora proporciona el motivo de usar este servicio de chatbot.,custom.aiml
+0,EL MOTIVO POR EL CUAL USO ESTE SERVICIO ES PORQUE *,*,*,Gracias por proporcionarnos la información: "<set name="motivo"> <star/>" se ha guardado.</set>#Newline            En un momento le informaremos sobre su caso.,custom.aiml

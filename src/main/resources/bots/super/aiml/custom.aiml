@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: custom.aiml -->
+<!-- Author: Dr. Richard S. Wallace -->
+<!-- Last modified: mayo 04, 2023 -->
+<!--  -->
+<!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
+<!--  -->
+<!-- The SUPER brain is Copyright &copy; 2023 by ALICE AI Foundation. -->
+<!--  -->
+<!-- The SUPER brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.alicebot.org -->
+<category><pattern>BUEN DÍA</pattern>
+<template>Hola ¿Qué tal?, Deja un mensaje y tu información de contacto
+    		y nos comunicaremos contigo lo más pronto posible.</template>
+</category>
+<category><pattern>MI NOMBRE ES *</pattern>
+<template>Mucho gusto, <set name="nombre"> <star/></set>;
+          ahora proporciona tu número telefónico.</template>
+</category>
+<category><pattern>MI NÚMERO DE TELEFÓNO ES *</pattern>
+<template>Número telefónico: "<set name="telefono"> <star/>" guardado.</set>
+            ahora proporciona el motivo de usar este servicio de chatbot.</template>
+</category>
+<category><pattern>EL MOTIVO POR EL CUAL USO ESTE SERVICIO ES PORQUE *</pattern>
+<template>Gracias por proporcionarnos la información: "<set name="motivo"> <star/>" se ha guardado.</set>
+            En un momento le informaremos sobre su caso.</template>
+</category>
+</aiml>
