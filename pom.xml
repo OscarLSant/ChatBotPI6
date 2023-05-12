@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
+    <>
         <dependency>
             <artifactId>com.google</artifactId>
             <groupId>Ab</groupId>
@@ -22,6 +22,9 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/Ab.jar</systemPath>
         </dependency>
+
+
+
     </dependencies>
 
 </project>

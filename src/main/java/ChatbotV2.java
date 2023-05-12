@@ -10,6 +10,8 @@ public class ChatbotV2 {
     //se crean las instancias del objeto Bot y Chat, que permiten la comunicación entre el usuario y el bot
     Bot bot;
     Chat chatSession;
+    private ClienteBD clientebd;
+    private ConexionBD conexionbd;
 
     //se crea el constructor, que inicializa el bot y la sesión de chat
     public ChatbotV2() {
@@ -19,6 +21,8 @@ public class ChatbotV2 {
         bot = new Bot("super", getResourcesPath());
         chatSession = new Chat(bot);
         bot.brain.nodeStats();
+        clientebd = new ClienteBD();
+        conexionbd = new ConexionBD();
     }
 
     //este método toma una línea de texto como entrada y devuelve la respuesta del bot en texto.
@@ -34,6 +38,20 @@ public class ChatbotV2 {
                         response = response.replace("&lt;", "<");
                     while (response.contains("&gt;"))
                         response = response.replace("&gt;", ">");
+
+                    clientebd.setMensaje(chatSession.predicates.get("mensaje"));
+                    clientebd.setTelefono(chatSession.predicates.get("telefono"));
+                    clientebd.setNombre(chatSession.predicates.get("nombre"));
+
+                    conexionbd.conectar();
+                    conexionbd.insertar(clientebd);
+                    conexionbd.desconectar();
+
+
+                    System.out.println(chatSession.predicates.get("mensaje"));
+                    System.out.println(chatSession.predicates.get("telefono"));
+                    System.out.println(chatSession.predicates.get("nombre"));
+
                     return response;
                 }
             }
