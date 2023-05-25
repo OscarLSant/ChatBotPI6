@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: custom.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: mayo 11, 2023 -->
+<!-- Last modified: mayo 24, 2023 -->
 <!--  -->
 <!-- This AIML file is part of the SUPER 0.0.4 chat bot knowledge base. -->
 <!--  -->
@@ -15,18 +15,57 @@
 <!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
+<category><pattern>BUENOS *</pattern>
+<template><set name="saludo"> <star/></set></template>
+</category>
+<category><pattern>BUENAS *</pattern>
+<template><set name="saludo"> <star/></set></template>
+</category>
+<category><pattern>HOLA BUENOS *</pattern>
+<template><set name="saludo"> <star/></set></template>
+</category>
+<category><pattern>HOLA BUENAS *</pattern>
+<template><set name="saludo"> <star/></set></template>
+</category>
+<category><pattern>QUÉ TAL BUENOS *</pattern>
+<template><set name="saludo"> <star/></set></template>
+</category>
 <category><pattern>BUEN DÍA</pattern>
 <template>Hola ¿Qué tal?, Deja un mensaje y tu información de contacto
     		y nos comunicaremos contigo lo más pronto posible.</template>
 </category>
+<category><pattern>NECESITO *</pattern>
+<template><set name="ayuda"> <star/></set></template>
+</category>
+<category><pattern>QUIÉN *</pattern>
+<template><set name="infochatbot"> <star/></set></template>
+</category>
+<category><pattern>QUÉ *</pattern>
+<template><set name="infochatbot"> <star/></set></template>
+</category>
 <category><pattern>MI NOMBRE ES *</pattern>
 <template>Mucho gusto, <set name="nombre"> <star/></set>;
-          ahora proporciona tu número telefónico.</template>
+          Ahora, por favor dime tu número de teléfono.</template>
 </category>
-<category><pattern>MI NÚMERO DE TELEFÓNO ES *</pattern>
-<template>Número telefónico: "<set name="telefono"> <star/>" guardado.</set></template>
+<category><pattern>ME LLAMO *</pattern>
+<template>Mucho gusto, <set name="nombre"> <star/></set>;
+          Ahora, por favor dime tu número de teléfono.</template>
 </category>
-<category><pattern>MI NÚMERO MENSAJE ES *</pattern>
-<template>TU MENSAJE ES: "<set name="mensaje"> <star/>" guardado.</set></template>
+<category><pattern>SOY *</pattern>
+<template>Mucho gusto, <set name="nombre"> <star/></set>;
+          Ahora, por favor dime tu número de teléfono.</template>
+</category>
+<category><pattern>MI NUMERO DE TELEFONO ES *</pattern>
+<template>Número telefónico: "<set name="telefono"> <star/>".</set> guardado.
+            Ahora, por favor dime cuál es tu mensaje:</template>
+</category>
+<category><pattern>MI NÚMERO DE TELÉFONO ES *</pattern>
+<template>Número telefónico: "<set name="telefono"> <star/></set> guardado.
+            Ahora, por favor dime cuál es tu mensaje:</template>
+</category>
+<category><pattern>MI MENSAJE ES *</pattern>
+<template>TU MENSAJE: "<set name="mensaje"> <star/></set> ha sido guardado.
+            Nos comunicaremos contigo lo más pronto posible.
+            Que tengas buen día!</template>
 </category>
 </aiml>

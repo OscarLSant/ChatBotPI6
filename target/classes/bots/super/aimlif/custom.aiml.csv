@@ -1,4 +1,15 @@
+0,BUENOS *,*,*,<set name="saludo"> <star/></set>,custom.aiml
+0,BUENAS *,*,*,<set name="saludo"> <star/></set>,custom.aiml
+0,HOLA BUENOS *,*,*,<set name="saludo"> <star/></set>,custom.aiml
+0,HOLA BUENAS *,*,*,<set name="saludo"> <star/></set>,custom.aiml
+0,QUÉ TAL BUENOS *,*,*,<set name="saludo"> <star/></set>,custom.aiml
 0,BUEN DÍA,*,*,Hola ¿Qué tal?#Comma Deja un mensaje y tu información de contacto#Newline    		y nos comunicaremos contigo lo más pronto posible.,custom.aiml
-0,MI NOMBRE ES *,*,*,Mucho gusto#Comma <set name="nombre"> <star/></set>;#Newline          ahora proporciona tu número telefónico.,custom.aiml
-0,MI NÚMERO DE TELEFÓNO ES *,*,*,Número telefónico: "<set name="telefono"> <star/>" guardado.</set>,custom.aiml
-0,MI NÚMERO MENSAJE ES *,*,*,TU MENSAJE ES: "<set name="mensaje"> <star/>" guardado.</set>,custom.aiml
+0,NECESITO *,*,*,<set name="ayuda"> <star/></set>,custom.aiml
+0,QUIÉN *,*,*,<set name="infochatbot"> <star/></set>,custom.aiml
+0,QUÉ *,*,*,<set name="infochatbot"> <star/></set>,custom.aiml
+0,MI NOMBRE ES *,*,*,Mucho gusto#Comma <set name="nombre"> <star/></set>;#Newline          Ahora#Comma por favor dime tu número de teléfono.,custom.aiml
+0,ME LLAMO *,*,*,Mucho gusto#Comma <set name="nombre"> <star/></set>;#Newline          Ahora#Comma por favor dime tu número de teléfono.,custom.aiml
+0,SOY *,*,*,Mucho gusto#Comma <set name="nombre"> <star/></set>;#Newline          Ahora#Comma por favor dime tu número de teléfono.,custom.aiml
+0,MI NUMERO DE TELEFONO ES *,*,*,Número telefónico: "<set name="telefono"> <star/>".</set> guardado.#Newline            Ahora#Comma por favor dime cuál es tu mensaje:,custom.aiml
+0,MI NÚMERO DE TELÉFONO ES *,*,*,Número telefónico: "<set name="telefono"> <star/></set> guardado.#Newline            Ahora#Comma por favor dime cuál es tu mensaje:,custom.aiml
+0,MI MENSAJE ES *,*,*,TU MENSAJE: "<set name="mensaje"> <star/></set> ha sido guardado.#Newline            Nos comunicaremos contigo lo más pronto posible.#Newline            Que tengas buen día!,custom.aiml

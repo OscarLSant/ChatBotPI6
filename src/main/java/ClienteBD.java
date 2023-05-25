@@ -2,11 +2,12 @@ public class ClienteBD {
     private String nombre;
     private String telefono;
     private String mensaje;
-    /*private ConexionBD conexion;
 
-    public ClienteBD() {
-        conexion = new ConexionBD();
-    }*/
+    // atributo para la consulta
+    private String saludo;
+    private String ayuda;
+    private String infochatbot;
+
 
     public void setNombre(String nombre){
         this.nombre = nombre;
@@ -30,5 +31,32 @@ public class ClienteBD {
 
     public String getMensaje() {
         return mensaje;
+    }
+
+
+    // getters and setters para las consultas
+
+    public String getSaludo() {
+        return saludo;
+    }
+
+    public void setSaludo(String saludo) {
+        this.saludo = saludo;
+    }
+
+    public String getAyuda() {
+        return ayuda;
+    }
+
+    public void setAyuda(String ayuda) {
+        this.ayuda = ayuda;
+    }
+
+    public String getInfochatbot() {
+        return infochatbot;
+    }
+
+    public void setInfochatbot(String infochatbot) {
+        this.infochatbot = infochatbot;
     }
 }
